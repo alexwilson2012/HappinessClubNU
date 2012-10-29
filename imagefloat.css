@@ -1,0 +1,135 @@
+#outer {
+
+	float:left;
+
+	z-index:-1;
+
+}
+
+#main{
+	overflow:visible;
+}
+
+.inimg {
+
+	background:#FFF;
+
+	border:#CCC solid 1px;
+
+	padding:3px;
+
+	float:left;
+	/* margin:5px; */
+	margin-left:2px;
+	margin-right:10px;
+
+}
+
+.inimg:hover {
+
+	background:#FFC;
+
+	border:#FC6 solid 1px;
+
+	padding:3px;
+
+	float:left;
+	/* margin:5px; */
+	margin-left:2px;
+	margin-right:10px;
+
+}
+
+.tooltip {
+
+	border-bottom: 1px dotted #000000; color: #000000; outline: none;
+
+	cursor:pointer; text-decoration: none;
+
+	position: relative;
+
+}
+
+.tooltip span {
+
+	margin-left: -999em;
+
+	position: absolute;
+
+	color:#666;
+
+}
+
+.tooltip:hover span {
+
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+
+	position: absolute; left: 1em; top: 2em; z-index: 99999999;
+
+	margin-left: -160px; margin-top: 70px; /* used to be only margin-left at 0; --moves floating image below highlighted one */
+	
+	width: auto;
+
+}
+
+
+
+.tooltip:hover em {
+
+	font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+
+	display: block; padding: 0.2em 0 0.6em 0;
+
+}
+
+.custom { 
+
+    padding: 0.5em 0.8em 0.8em 2em;
+
+}
+
+.classic {
+
+	background: #FFFFAA; 
+
+	border: 1px solid #FFAD33; 
+
+	padding: 4px; 
+
+}
+
+.shortfat {
+
+background-color:#FFFFFF;
+
+border-color:#DFDFDF;
+
+}
+
+.shortfat {
+
+-moz-border-radius:4px 4px 4px 4px;
+
+border-spacing:0;
+
+border-style:solid;
+
+border-width:1px;
+
+clear:both;
+
+margin:0;
+
+width:30px;
+
+}
+
+#primary, #secondary {
+
+	overflow:visible;
+
+}

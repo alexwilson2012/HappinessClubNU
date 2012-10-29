@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+   
+<!-- THIS WEBSITE IS THE PROPERTY OF HAPPINESS CLUB
+This is the homepage: http://www.happinessclub.org
+Developed by Alex Wilson
+						-->
+
+<!-- Interwebs declaration -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--Title of page -->
+<title>Happiness Club</title>
+    
+<!-- Stylesheet & Favicon -->
+<link rel="icon" type="image/png" href="images/smiley_face.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:regular,bold' rel='stylesheet' type='text/css'>
+
+<!-- WP Head -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2'></script>
+<script type='text/javascript' src='js/sliding_effect.js'></script>
+
+</head>
+
+<!-- Beginning of MAIN BODY -->
+
+<body class="home blog">
+<div id="wrap">
+
+<!--Logo on top of page-->
+<div id="header" class="clearfix"><div id="logo">
+	<a href="http://www.happinessclub.org/" title="Happiness Club" rel="homepage"><img height="70" width="300" src="images/Happiness%20Club%20Logo.jpg" alt="Happiness Club Logo" /></a>
+</div></div>
+
+<!--NAVIGATION TOOLBAR STARTS HERE *** copy this into all other files, this is master -->
+<div id="navigation" class="clearfix">
+<div class="menu-menu-container"><ul id="menu-menu" class="sf-menu">
+	<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-6"><a href="http://www.happinessclub.org/">Home</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49"><a href="http://www.happinessclub.org/story.html">The Story</a></li>
+	<li id="menu-item-53" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-53"><a href="http://www.happinessclub.org/events.html">What We've Done</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="http://www.happinessclub.org/join.html">How You Can Get Involved</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://www.happinessclub.org/smile.html">Smile and Be Happy!</a></li>
+</div></div>
+<!-- Navigation toolbar ends here: copy everything above, this is master-->  
+
+<!-- Homepage image slider description -->
+<div id="slideshow">
+    <ul class="sources">
+                <li><img src="images/Smiles.jpg"/></li>
+                <li><img src="images/Rand.jpg"/></li>
+                <li><img src="images/Kites.jpg"/></li>
+            </ul>
+</div>
+ 
+<!-- Welcome message on homepage -->
+<div id="main">  
+<div id="home-quote">
+	Welcome to Happiness Club at Northwestern University!
+</div></div>
+<script type="text/javascript" src="js/slideshow.js"></script>
+<script type="text/javascript">
+    $(".fade").hover(function () {
+        $(this).fadeTo(150, 1);
+    }, function () {
+        $(this).fadeTo(150, 0.6);
+        // First loads at 0.65 opacity
+    });
+    
+    $(".columns").each(function (){
+        var els = $(this).find('tr')[0].cells;
+        var wid = Math.round(100/els.length)+"%";
+        $(this).find("td").attr('width',wid);
+    });
+    
+</script>
+<!-- Footer -->
+<div id="copyright">Happiness Club &#169 2012</div>
+<!-- END copyright - theme by WPExplorer.com -->
+</body>
+</html>
